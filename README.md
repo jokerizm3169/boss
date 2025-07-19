@@ -92,7 +92,7 @@
   <br>
   
   <h3>📊 Profil İstatistikleri</h3>
-  ![Visitor Count](https://profile-counter.glitch.me/jokerizm3169/count.svg)
+  <img src="https://profile-counter.glitch.me/jokerizm3169/count.svg" alt="Visitor Count" />
   
   <br>
   
