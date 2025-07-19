@@ -42,7 +42,7 @@
 ### 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=KULLANICI_ADINIZ&theme=darkhub&no-frame=true&margin-w=15" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=jokerizm3169&theme=darkhub&no-frame=true&margin-w=15" alt="GitHub Trophies" />
 </div>
 
 ---
