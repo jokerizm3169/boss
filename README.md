@@ -75,22 +75,17 @@
 
 ---
 
-### 🐍 GitHub Snake Animasyonu
+### 🐍 EzTheBoss Snake
 
 <div align="center">
 
-![Snake animation](https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg)
+![EzTheBoss Banner](https://raw.githubusercontent.com/jokerizm3169/boss/output/eztheboss-banner.svg)
 
-<p>🔧 <em>EzTheBoss özel snake animasyonu hazırlanıyor...</em></p>
+![EzTheBoss Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/github-contribution-grid-snake.svg)
 
-</div>
+![Golden Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/eztheboss-snake.svg)
 
-### 🎯 EzTheBoss Snake (Yakında!)
-
-<div align="center">
-
-<p>🐍 <strong>Özel Animasyon:</strong> Snake "EzTheBoss" yazısını yiyip "ezbro" yazısını bırakacak!</p>
-<p>⚙️ <em>Workflow çalıştırıldıktan sonra burada görünecek...</em></p>
+<p>🎯 <strong>EzTheBoss</strong> aka <strong>ezbro</strong> - Snake Master! 🐍</p>
 
 </div>
 
