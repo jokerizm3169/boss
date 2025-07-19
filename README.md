@@ -75,27 +75,23 @@
 
 ---
 
-### 🐍 EzTheBoss Snake Animation
+### 🐍 EzTheBoss → ezbro Snake Hikayesi
 
 <div align="center">
 
-![EzTheBoss Text](https://raw.githubusercontent.com/jokerizm3169/boss/output/custom/eztheboss-text.svg)
+![Snake Story](https://raw.githubusercontent.com/jokerizm3169/boss/output/custom/snake-story.svg)
 
-![EzTheBoss Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/github-contribution-grid-snake.svg)
+![EzTheBoss ezbro Animation](https://raw.githubusercontent.com/jokerizm3169/boss/output/custom/eztheboss-ezbro-animation.svg)
 
-<p>🐍 <em>Snake is eating EzTheBoss...</em> 🐍</p>
-
-![Ezbro Text](https://raw.githubusercontent.com/jokerizm3169/boss/output/custom/ezbro-text.svg)
+<p><strong>🎭 Hikaye:</strong> Snake "EzTheBoss" yazısını yiyor ve arkasından "ezbro" yazısını bırakıyor!</p>
 
 </div>
 
-### 🎨 Özel Renkli Snake Koleksiyonu
+### 🎨 Klasik Snake Animasyonu
 
 <div align="center">
 
-![EzTheBoss Colorful Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/eztheboss-snake.svg)
-
-![Ezbro Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/ezbro-snake.svg)
+![GitHub Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/base-snake.svg)
 
 </div>
 
