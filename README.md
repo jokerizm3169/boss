@@ -79,11 +79,7 @@
 
 <div align="center">
 
-![EzTheBoss Banner](https://raw.githubusercontent.com/jokerizm3169/boss/output/eztheboss-banner.svg)
-
-![EzTheBoss Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/github-contribution-grid-snake.svg)
-
-![Golden Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/eztheboss-snake.svg)
+![Snake animation](https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg)
 
 <p>🎯 <strong>EzTheBoss</strong> aka <strong>ezbro</strong> - Snake Master! 🐍</p>
 
