@@ -1,53 +1,44 @@
-name: EzTheBoss Snake Eats and Creates 🐍
+name: EzTheBoss Snake
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
-    branches:
-    - main
+    branches: [ main ]
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     permissions:
       contents: write
-      pages: write
-      id-token: write
     
     steps:
-      - name: 🚀 Checkout
+      - name: Checkout
         uses: actions/checkout@v4
         
-      - name: 🐍 Generate Base Snake
+      - name: Generate Snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: jokerizm3169
           outputs: |
-            dist/base-snake.svg
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/eztheboss-snake.svg?color_snake=#FFD700&color_dots=#FFA500,#FF8C00,#FF6347,#FF4500,#DC143C
             
-      - name: 🎨 Create EzTheBoss → ezbro Animation
+      - name: Create EzTheBoss Banner
         run: |
-          mkdir -p dist/custom
+          mkdir -p dist
           
-          # Ana animasyon SVG'sini oluştur
-          cat > dist/custom/eztheboss-ezbro-animation.svg << 'EOF'
-          <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+          # EzTheBoss banner oluştur
+          cat > dist/eztheboss-banner.svg << 'EOF'
+          <svg width="600" height="100" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <!-- Gradient tanımları -->
-              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" style="stop-color:#FFD700"/>
-                <stop offset="100%" style="stop-color:#FFA500"/>
+                <stop offset="50%" style="stop-color:#FFA500"/>
+                <stop offset="100%" style="stop-color:#FF8C00"/>
               </linearGradient>
-              
-              <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style="stop-color:#00FFFF"/>
-                <stop offset="100%" style="stop-color:#8000FF"/>
-              </linearGradient>
-              
-              <!-- Glow efektleri -->
               <filter id="glow">
                 <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
                 <feMerge>
@@ -55,188 +46,32 @@ jobs:
                   <feMergeNode in="SourceGraphic"/>
                 </feMerge>
               </filter>
-              
-              <!-- Snake animasyonu -->
-              <style>
-                .snake-body { fill: #32CD32; }
-                .snake-head { fill: #228B22; }
-                .contribution-square { width: 12px; height: 12px; rx: 2; }
-                .eaten { fill: #0d1117; opacity: 0; }
-                .created { fill: #39d353; opacity: 1; }
-                
-                /* EzTheBoss yazısı animasyonu */
-                .eztheboss-letter { 
-                  fill: url(#goldGrad); 
-                  font-family: 'Arial Black', sans-serif; 
-                  font-size: 24px; 
-                  font-weight: bold;
-                  filter: url(#glow);
-                }
-                
-                /* ezbro yazısı animasyonu */
-                .ezbro-letter { 
-                  fill: url(#neonGrad); 
-                  font-family: 'Arial Black', sans-serif; 
-                  font-size: 20px; 
-                  font-weight: bold;
-                  filter: url(#glow);
-                  opacity: 0;
-                }
-                
-                /* Snake hareket animasyonu */
-                .snake-path {
-                  animation: snakeMove 10s infinite linear;
-                }
-                
-                /* Yazı yeme animasyonu */
-                .eat-animation {
-                  animation: eatText 10s infinite linear;
-                }
-                
-                /* Yazı bırakma animasyonu */
-                .create-animation {
-                  animation: createText 10s infinite linear;
-                }
-                
-                @keyframes snakeMove {
-                  0% { transform: translateX(-50px); }
-                  30% { transform: translateX(200px); }
-                  60% { transform: translateX(400px); }
-                  100% { transform: translateX(600px); }
-                }
-                
-                @keyframes eatText {
-                  0% { opacity: 1; }
-                  30% { opacity: 0.5; }
-                  50% { opacity: 0; }
-                  100% { opacity: 0; }
-                }
-                
-                @keyframes createText {
-                  0% { opacity: 0; }
-                  60% { opacity: 0; }
-                  80% { opacity: 0.5; }
-                  100% { opacity: 1; }
-                }
-              </style>
             </defs>
             
-            <!-- Arka plan -->
-            <rect width="800" height="400" fill="#0d1117"/>
+            <rect width="600" height="100" fill="#0d1117" rx="10"/>
             
-            <!-- Başlık -->
-            <text x="400" y="30" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">
-              🐍 EzTheBoss Snake Animation 🐍
+            <text x="300" y="35" text-anchor="middle" fill="url(#gold)" 
+                  font-family="Arial Black" font-size="28" font-weight="bold" 
+                  filter="url(#glow)">
+              EzTheBoss
             </text>
             
-            <!-- EzTheBoss yazısı (yenilecek) -->
-            <g class="eat-animation">
-              <text x="150" y="120" class="eztheboss-letter">E</text>
-              <text x="170" y="120" class="eztheboss-letter">z</text>
-              <text x="185" y="120" class="eztheboss-letter">T</text>
-              <text x="205" y="120" class="eztheboss-letter">h</text>
-              <text x="225" y="120" class="eztheboss-letter">e</text>
-              <text x="245" y="120" class="eztheboss-letter">B</text>
-              <text x="265" y="120" class="eztheboss-letter">o</text>
-              <text x="285" y="120" class="eztheboss-letter">s</text>
-              <text x="305" y="120" class="eztheboss-letter">s</text>
-            </g>
+            <text x="300" y="65" text-anchor="middle" fill="#00FFFF" 
+                  font-family="Arial" font-size="16">
+              🐍 Snake Master 🐍
+            </text>
             
-            <!-- Snake -->
-            <g class="snake-path">
-              <!-- Snake gövdesi -->
-              <circle cx="0" cy="150" r="8" class="snake-body"/>
-              <circle cx="-15" cy="150" r="7" class="snake-body"/>
-              <circle cx="-30" cy="150" r="6" class="snake-body"/>
-              <circle cx="-45" cy="150" r="5" class="snake-body"/>
-              
-              <!-- Snake kafası -->
-              <circle cx="15" cy="150" r="10" class="snake-head"/>
-              <circle cx="18" cy="145" r="2" fill="#ffffff"/> <!-- Göz -->
-              <circle cx="18" cy="155" r="2" fill="#ffffff"/> <!-- Göz -->
-            </g>
-            
-            <!-- ezbro yazısı (bırakılacak) -->
-            <g class="create-animation">
-              <text x="450" y="200" class="ezbro-letter">e</text>
-              <text x="465" y="200" class="ezbro-letter">z</text>
-              <text x="480" y="200" class="ezbro-letter">b</text>
-              <text x="495" y="200" class="ezbro-letter">r</text>
-              <text x="510" y="200" class="ezbro-letter">o</text>
-            </g>
-            
-            <!-- Contribution grid simülasyonu -->
-            <g transform="translate(100, 250)">
-              <!-- EzTheBoss contribution squares (yenilecek) -->
-              <rect x="0" y="0" class="contribution-square eat-animation" fill="#39d353"/>
-              <rect x="15" y="0" class="contribution-square eat-animation" fill="#39d353"/>
-              <rect x="30" y="0" class="contribution-square eat-animation" fill="#39d353"/>
-              <rect x="45" y="0" class="contribution-square eat-animation" fill="#39d353"/>
-              <rect x="60" y="0" class="contribution-square eat-animation" fill="#39d353"/>
-              
-              <!-- ezbro contribution squares (oluşturulacak) -->
-              <rect x="300" y="20" class="contribution-square create-animation" fill="#39d353"/>
-              <rect x="315" y="20" class="contribution-square create-animation" fill="#39d353"/>
-              <rect x="330" y="20" class="contribution-square create-animation" fill="#39d353"/>
-              <rect x="345" y="20" class="contribution-square create-animation" fill="#39d353"/>
-              <rect x="360" y="20" class="contribution-square create-animation" fill="#39d353"/>
-            </g>
-            
-            <!-- Alt açıklama -->
-            <text x="400" y="370" text-anchor="middle" fill="#7d8590" font-size="14">
-              Snake eats "EzTheBoss" and creates "ezbro" ✨
+            <text x="300" y="85" text-anchor="middle" fill="#32CD32" 
+                  font-family="Arial" font-size="12">
+              aka ezbro
             </text>
           </svg>
           EOF
           
-          echo "🎨 EzTheBoss → ezbro animation created!"
-          
-      - name: 🎭 Create Story Animation
-        run: |
-          # Hikaye animasyonu
-          cat > dist/custom/snake-story.svg << 'EOF'
-          <svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <style>
-                .story-text { 
-                  font-family: Arial, sans-serif; 
-                  font-size: 16px; 
-                  fill: #ffffff;
-                  text-anchor: middle;
-                }
-                .phase1 { animation: fadeInOut 12s infinite; animation-delay: 0s; }
-                .phase2 { animation: fadeInOut 12s infinite; animation-delay: 4s; }
-                .phase3 { animation: fadeInOut 12s infinite; animation-delay: 8s; }
-                
-                @keyframes fadeInOut {
-                  0%, 25% { opacity: 0; }
-                  33%, 66% { opacity: 1; }
-                  75%, 100% { opacity: 0; }
-                }
-              </style>
-            </defs>
-            
-            <rect width="600" height="300" fill="#0d1117"/>
-            
-            <text x="300" y="100" class="story-text phase1">
-              🐍 Snake approaches "EzTheBoss"...
-            </text>
-            
-            <text x="300" y="150" class="story-text phase2">
-              🍽️ Snake eats the golden text!
-            </text>
-            
-            <text x="300" y="200" class="story-text phase3">
-              ✨ Snake creates "ezbro" in neon colors!
-            </text>
-          </svg>
-          EOF
-          
-      - name: 🚀 Deploy Animations
+      - name: Deploy
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "🐍 Snake ate EzTheBoss and created ezbro! ✨"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
