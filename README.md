@@ -75,11 +75,27 @@
 
 ---
 
-### 🐍 Contribution Snake
+### 🐍 EzTheBoss Snake Animation
 
 <div align="center">
 
-![Snake animation](https://raw.githubusercontent.com/jokerizm3169/boss/output/github-contribution-grid-snake.svg)
+![EzTheBoss Text](https://raw.githubusercontent.com/jokerizm3169/boss/output/custom/eztheboss-text.svg)
+
+![EzTheBoss Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/github-contribution-grid-snake.svg)
+
+<p>🐍 <em>Snake is eating EzTheBoss...</em> 🐍</p>
+
+![Ezbro Text](https://raw.githubusercontent.com/jokerizm3169/boss/output/custom/ezbro-text.svg)
+
+</div>
+
+### 🎨 Özel Renkli Snake Koleksiyonu
+
+<div align="center">
+
+![EzTheBoss Colorful Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/eztheboss-snake.svg)
+
+![Ezbro Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/ezbro-snake.svg)
 
 </div>
 
