@@ -75,23 +75,22 @@
 
 ---
 
-### 🐍 EzTheBoss → ezbro Snake Hikayesi
+### 🐍 GitHub Snake Animasyonu
 
 <div align="center">
 
-![Snake Story](https://raw.githubusercontent.com/jokerizm3169/boss/output/custom/snake-story.svg)
+![Snake animation](https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg)
 
-![EzTheBoss ezbro Animation](https://raw.githubusercontent.com/jokerizm3169/boss/output/custom/eztheboss-ezbro-animation.svg)
-
-<p><strong>🎭 Hikaye:</strong> Snake "EzTheBoss" yazısını yiyor ve arkasından "ezbro" yazısını bırakıyor!</p>
+<p>🔧 <em>EzTheBoss özel snake animasyonu hazırlanıyor...</em></p>
 
 </div>
 
-### 🎨 Klasik Snake Animasyonu
+### 🎯 EzTheBoss Snake (Yakında!)
 
 <div align="center">
 
-![GitHub Snake](https://raw.githubusercontent.com/jokerizm3169/boss/output/base-snake.svg)
+<p>🐍 <strong>Özel Animasyon:</strong> Snake "EzTheBoss" yazısını yiyip "ezbro" yazısını bırakacak!</p>
+<p>⚙️ <em>Workflow çalıştırıldıktan sonra burada görünecek...</em></p>
 
 </div>
 
