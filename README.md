@@ -78,9 +78,7 @@
 ### 🐍 Contribution Snake
 
 <div align="center">
-  
-![Snake animation](https://raw.githubusercontent.com/jokerizm3169/jokerizm3169/output/github-contribution-grid-snake.svg)
-
+  <img src="https://raw.githubusercontent.com/jokerizm3169/jokerizm3169/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </div>
 
 ---
@@ -94,14 +92,12 @@
   <br>
   
   <h3>📊 Profil İstatistikleri</h3>
-  
-![Visitor Count](https://profile-counter.glitch.me/jokerizm3169/count.svg)
+  <img src="https://profile-counter.glitch.me/jokerizm3169/count.svg" alt="Visitor Count" />
   
   <br>
   
-![GitHub Takipçiler](https://img.shields.io/github/followers/jokerizm3169?label=Takipçiler&style=social)
-![GitHub Yıldızlar](https://img.shields.io/github/stars/jokerizm3169?affiliations=OWNER&style=social)
-
+  <img src="https://img.shields.io/github/followers/jokerizm3169?label=Takipçiler&style=social" alt="GitHub Takipçiler" />
+  <img src="https://img.shields.io/github/stars/jokerizm3169?affiliations=OWNER&style=social" alt="GitHub Yıldızlar" />
 </div>
 
 ---
