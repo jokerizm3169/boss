@@ -79,7 +79,7 @@
 
 <div align="center">
 
-![Snake animation](https://raw.githubusercontent.com/jokerizm3169/jokerizm3169/output/github-contribution-grid-snake.svg)
+![Snake animation](https://raw.githubusercontent.com/jokerizm3169/boss/output/github-contribution-grid-snake.svg)
 
 </div>
 
