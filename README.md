@@ -97,10 +97,6 @@
   
   <h3>📊 Profil İstatistikleri</h3>
   
-![Visitor Count](https://profile-counter.glitch.me/jokerizm3169/count.svg)
-  
-  <br>
-  
 ![GitHub Takipçiler](https://img.shields.io/github/followers/jokerizm3169?label=Takipçiler&style=social) ![GitHub Yıldızlar](https://img.shields.io/github/stars/jokerizm3169?affiliations=OWNER&style=social)
 
 </div>
