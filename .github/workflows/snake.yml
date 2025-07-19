@@ -1,8 +1,8 @@
-name: Generate Snake
+name: Generate EzTheBoss Snake 🐍
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *"  # Her 6 saatte bir çalışır
   workflow_dispatch:
   push:
     branches:
@@ -11,21 +11,113 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     
     steps:
-      - name: Generate github-contribution-grid-snake.svg
+      - name: 🚀 Checkout Repository
+        uses: actions/checkout@v4
+        
+      - name: 🐍 Generate EzTheBoss Snake Animation
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: jokerizm3169
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/eztheboss-snake.svg?color_snake=#f9ca24&color_dots=#f0932b,#eb4d4b,#6ab04c,#22a6b3,#be2edd
+            dist/ezbro-snake.svg?color_snake=#00d2d3&color_dots=#ff9ff3,#54a0ff,#5f27cd,#00d2d3,#ff9f43
+          
+      - name: 🎨 Create Custom EzTheBoss Animation
+        run: |
+          mkdir -p dist/custom
+          
+          # EzTheBoss yazısını oluştur
+          cat > dist/custom/eztheboss-text.svg << 'EOF'
+          <svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                <feMerge> 
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
             
-      - name: Push github-contribution-grid-snake.svg to the output branch
+            <text x="400" y="100" font-family="Arial Black, sans-serif" font-size="48" 
+                  font-weight="bold" text-anchor="middle" fill="url(#goldGradient)" 
+                  filter="url(#glow)" stroke="#B8860B" stroke-width="2">
+              EzTheBoss
+            </text>
+            
+            <text x="400" y="150" font-family="Arial, sans-serif" font-size="24" 
+                  text-anchor="middle" fill="#32CD32" opacity="0.8">
+              🐍 Snake is eating this text... 🐍
+            </text>
+          </svg>
+          EOF
+          
+          # ezbro yazısını oluştur
+          cat > dist/custom/ezbro-text.svg << 'EOF'
+          <svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#0080FF;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#8000FF;stop-opacity:1" />
+              </linearGradient>
+              <filter id="neonGlow">
+                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                <feMerge> 
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            
+            <text x="400" y="100" font-family="Arial Black, sans-serif" font-size="56" 
+                  font-weight="bold" text-anchor="middle" fill="url(#neonGradient)" 
+                  filter="url(#neonGlow)" stroke="#00CED1" stroke-width="2">
+              ezbro
+            </text>
+            
+            <text x="400" y="150" font-family="Arial, sans-serif" font-size="20" 
+                  text-anchor="middle" fill="#00FF7F" opacity="0.9">
+              ✨ Revealed by the snake! ✨
+            </text>
+          </svg>
+          EOF
+          
+          echo "🎨 Custom animations created!"
+          
+      - name: 📊 Generate Contribution Stats
+        run: |
+          echo "📈 EzTheBoss Contribution Stats:" > dist/stats.txt
+          echo "🐍 Snake Animation: Active" >> dist/stats.txt
+          echo "⭐ Repository: boss" >> dist/stats.txt
+          echo "🎯 User: jokerizm3169" >> dist/stats.txt
+          echo "🕒 Generated: $(date)" >> dist/stats.txt
+          
+      - name: 🚀 Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "🐍 EzTheBoss Snake ate the text and revealed ezbro! 🎉"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: 🎉 Success Notification
+        run: |
+          echo "🎉 EzTheBoss Snake Animation Successfully Generated!"
+          echo "🐍 Snake ate 'EzTheBoss' and revealed 'ezbro'!"
+          echo "✨ Animation available at: https://raw.githubusercontent.com/jokerizm3169/boss/output/"
