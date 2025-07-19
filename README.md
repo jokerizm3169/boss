@@ -1,4 +1,6 @@
-# Merhaba, Ben [Yasin] 👋
+# Merhaba, Ben EzTheBoss 👋
+
+![Profile views](https://komarev.com/ghpvc/?username=jokerizm3169&label=Profil%20görüntülenme&color=0e75b6&style=flat)
 
 ## 🚀 Hakkımda
 
@@ -82,9 +84,20 @@
 ---
 
 <div align="center">
-  <h3>💖 Projelerimi beğendiyseniz ⭐ vermeyi unutmayın!</h3>
+  <h2>🌟 Projelerimi Beğendiyseniz</h2>
+  <p>⭐ <strong>Star</strong> vermeyi unutmayın!</p>
+  <p>🔄 <strong>Fork</strong> yaparak katkıda bulunabilirsiniz!</p>
+  <p>💬 <strong>Issue</strong> açarak önerilerinizi paylaşabilirsiniz!</p>
   
+  <br>
+  
+  <h3>📊 Profil İstatistikleri</h3>
   ![Visitor Count](https://profile-counter.glitch.me/jokerizm3169/count.svg)
+  
+  <br>
+  
+  <img src="https://img.shields.io/github/followers/jokerizm3169?label=Takipçiler&style=social" alt="GitHub Takipçiler" />
+  <img src="https://img.shields.io/github/stars/jokerizm3169?affiliations=OWNER&style=social" alt="GitHub Yıldızlar" />
 </div>
 
 ---
