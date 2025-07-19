@@ -22,20 +22,20 @@
 ### 📊 GitHub İstatistiklerim
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=KULLANICI_ADINIZ&show_icons=true&theme=react&bg_color=0D1117&title_color=79ff97&text_color=ffffff" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=jokerizm3169&show_icons=true&theme=react&bg_color=0D1117&title_color=79ff97&text_color=ffffff" alt="GitHub Stats" />
   
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=KULLANICI_ADINIZ&theme=dark&background=0D1117&border=0D1117" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=jokerizm3169&theme=dark&background=0D1117&border=0D1117" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KULLANICI_ADINIZ&layout=compact&theme=react&bg_color=0D1117&border_color=0D1117&title_color=79ff97&text_color=ffffff" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jokerizm3169&layout=compact&theme=react&bg_color=0D1117&border_color=0D1117&title_color=79ff97&text_color=ffffff" alt="Top Languages" />
 </div>
 
 ---
 
 ### 📈 Aktivite Grafiği
 
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=KULLANICI_ADINIZ&theme=react-dark&bg_color=0D1117&color=79ff97&line=79ff97&point=ffffff)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=jokerizm3169&theme=react-dark&bg_color=0D1117&color=79ff97&line=79ff97&point=ffffff)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ---
 
@@ -76,7 +76,7 @@
 ### 🐍 Contribution Snake
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/KULLANICI_ADINIZ/KULLANICI_ADINIZ/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <img src="https://raw.githubusercontent.com/jokerizm3169/jokerizm3169/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </div>
 
 ---
@@ -84,7 +84,7 @@
 <div align="center">
   <h3>💖 Projelerimi beğendiyseniz ⭐ vermeyi unutmayın!</h3>
   
-  ![Visitor Count](https://profile-counter.glitch.me/KULLANICI_ADINIZ/count.svg)
+  ![Visitor Count](https://profile-counter.glitch.me/jokerizm3169/count.svg)
 </div>
 
 ---
